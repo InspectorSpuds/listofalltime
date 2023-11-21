@@ -7,7 +7,7 @@ function HelloWorldApp() {
   const [wordList, addWord] = useState([]);
 
   return (
-    <ScrollView style={style.container}>
+    <ScrollView conetentContainerStyle={style.container}>
       <View style={style.mainArea}>
         <Text>Make Words</Text>
         <TextInput onChangeText={setText} placeholder={"gib me word"}  style={style.wordEntry}></TextInput>
@@ -30,6 +30,8 @@ function HelloWorldApp() {
 const style = StyleSheet.create({
   container : {
     flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
   },
 
   mainArea: {
